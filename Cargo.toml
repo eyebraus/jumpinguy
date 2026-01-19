@@ -7,6 +7,9 @@ edition = "2024"
 bevy = "0.18.0"
 serde = { version = "1.0.228", features = ["derive"] }
 
+[lints.clippy]
+pedantic = "warn"
+
 # Configuring build per Bevy recommendations
 # https://bevy.org/learn/quick-start/getting-started/setup/#compile-with-performance-optimizations
 [profile.dev]

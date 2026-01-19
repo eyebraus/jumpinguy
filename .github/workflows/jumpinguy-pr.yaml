@@ -8,8 +8,16 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
+      - name: Install stable toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update; sudo apt-get install --no-install-recommends libasound2-dev libudev-dev libwayland-dev
+
       - name: Build
-        run: cargo build
+        run: |
+          cargo build
 
 on:
   pull_request:
