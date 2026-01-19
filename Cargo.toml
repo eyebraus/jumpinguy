@@ -1,0 +1,16 @@
+[package]
+name = "jumpinguy"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = "0.18.0"
+serde = { version = "1.0.228", features = ["derive"] }
+
+# Configuring build per Bevy recommendations
+# https://bevy.org/learn/quick-start/getting-started/setup/#compile-with-performance-optimizations
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3

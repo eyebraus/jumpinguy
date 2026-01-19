@@ -1,0 +1,23 @@
+name: jumpinguy-official
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Build
+        run: cargo build
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  actions: read
+  checks: write
+  contents: read
+  pull-requests: write
