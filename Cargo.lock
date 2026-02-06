@@ -3078,6 +3078,15 @@ dependencies = [
 name = "jumpinguy"
 version = "0.1.0"
 dependencies = [
+ "avian2d",
+ "bevy",
+ "jumpinguy_lib",
+]
+
+[[package]]
+name = "jumpinguy_lib"
+version = "0.1.0"
+dependencies = [
  "anyhow",
  "avian2d",
  "bevy",

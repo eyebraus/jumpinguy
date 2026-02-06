@@ -1,0 +1,10 @@
+[package]
+name = "jumpinguy"
+edition.workspace = true
+license-file.workspace = true
+version.workspace = true
+
+[dependencies]
+avian2d.workspace = true
+bevy.workspace = true
+jumpinguy_lib = { path = "../jumpinguy_lib" }
