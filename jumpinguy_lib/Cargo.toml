@@ -1,0 +1,13 @@
+[package]
+name = "jumpinguy_lib"
+edition.workspace = true
+license-file.workspace = true
+version.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+avian2d.workspace = true
+bevy.workspace = true
+serde.workspace = true
+serde_yml.workspace = true
+thiserror.workspace = true
