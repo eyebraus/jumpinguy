@@ -1,0 +1,26 @@
+name: rogue
+
+grid:
+  columns: 10
+  rows: 10
+
+strips:
+  - name: idle
+    frames_per_second: 2
+    row: 0
+  - name: idle_flip
+    frames_per_second: 2
+    row: 1
+  - name: walk
+    frames_per_second: 2
+    row: 2
+  - name: attack
+    frames_per_second: 2
+    row: 3
+  - name: die
+    frames_per_second: 2
+    row: 4
+
+tile:
+  height: 32
+  width: 32
